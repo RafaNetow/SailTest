@@ -2,7 +2,7 @@
 
 module.exports = {
 
-   connection: 'someMysqlServer',
+   connection: 'somePostgresqlServer',
    tableName: 'users',
 
    attributes: {
