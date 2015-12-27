@@ -1,8 +1,21 @@
 <!DOCTYPE html>
-<head> <script src="angular.js"></script>  </head>
+<head>  </head>
 
 <html ng-app>
-<p>1 + 2 = {{ 1 + 2 }}</p>
+
+	<p>1 + 2 = {{ 1 + 2 }}</p>
+	<body>
+	<form ng-controller="UserController" >
+    	<legend>Find user</legend>
+    	<label>User name</label>
+    	<input type="text"  ng-model="user" >
+    	 {{ response }}
+
+    	<button class="btn btn-primary">Find</button>
+
+</form>
+</body>
+
 </html>
 
 
