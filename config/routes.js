@@ -33,13 +33,8 @@ module.exports.routes = {
   ***************************************************************************/
 
   'get /findUser/:userId': 'UsersController.findUser',
-  'get /findUserWithAgeMayorToEighteen': 'UsersController.findAllUserWithAgeMayorToEighteen',
-  'get /findUser': 'UsersController.findUser',
-  'get /sayhi': 'UsersController.hi',
-  'get /bye': 'UsersController.bye',
   '/': {
     view: 'index'
-
   }
 
   /***************************************************************************

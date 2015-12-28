@@ -1,23 +1,18 @@
-	angular.module('app').controller('UsersController', ['$scope','UserService', function($scope) {
-	  		  		$scope.user = '';
-	  		  		$scope.response = '';
+module.exports = {
+	getAllUsers: function(req, res) {
+		var users = [
+			{
+				id: 1,
+				firstName: "Rafael",
+				lastName: "Sequeiros"
+			},
+			{
+				id: 2,
+				firstName: "Abelardo",
+				lastName: "Mendoza"
+			}
+		];
 
- 			$scope.FindUser = function(){
-	  		 UserService.getUser($scope.user).
-                success(function(data, status, headers, config) {
-           						$scope.response = data;
-                }).
-                error(function(data, status, headers, config) {
-                  				 $scope.response = data;
-             });
-           };
-	}]);
-
-
-
-
-
-
-
-
-
+		res.json(users);
+	}
+};
