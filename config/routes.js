@@ -37,8 +37,11 @@ module.exports.routes = {
   'get /findUser': 'UsersController.findUser',
   'get /sayhi': 'UsersController.hi',
   'get /bye': 'UsersController.bye',
-  '/': {
+  '/rafaview':{
     view: 'index'
+  },
+  '/': {
+    view: 'homepage'
 
   }
 
