@@ -1,5 +1,5 @@
-'use strict';
-angular.module('app').controller('IndexController', ['$scope', function($scope){
-	$scope.user = "Rafael"
+var app = angular.module('myapp', []);
 
-}]);
+    app.controller('Ctrl', function($scope){
+        $scope.user = "Rafael";
+    });
